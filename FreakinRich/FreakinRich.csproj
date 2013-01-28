@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D510730-9D07-4E6F-9767-5A33F53633E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FreakinRich</RootNamespace>
+    <AssemblyName>FreakinRich</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NAudio">
+      <HintPath>referencesDll\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WindowsMediaFormat">
+      <HintPath>referencesDll\NAudio.WindowsMediaFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XCoolForm">
+      <HintPath>referencesDll\XCoolForm.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chance.cs" />
+    <Compile Include="PlayerMarker.cs" />
+    <Compile Include="StreamConformer.cs" />
+    <Compile Include="GameLogic.cs" />
+    <Compile Include="FormInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInterface.Designer.cs">
+      <DependentUpon>FormInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Property.cs" />
+    <Compile Include="PropertyGroup.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="XmlThemeLoader.cs" />
+    <EmbeddedResource Include="FormInterface.resx">
+      <DependentUpon>FormInterface.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\tabuleiro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\casa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dice-1-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dice-2-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dice-3-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dice-4-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dice-5-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dice-6-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\playerMarker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\filtro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\bt_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\bt_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dados_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\casas0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\casas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\casas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\casas3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\casas4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\esq_hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dir_hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dir_casas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dir_casas3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dir_casas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dir_casas4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\dir_casas0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\esq_casas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\esq_casas3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\esq_casas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\esq_casas4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\esq_casas0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\back2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\info cards\info_buy_sell_house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\info cards\info_charge_rent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\info cards\info_double.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\info cards\info_gotojail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\info cards\info_nomoney_tobuy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\info cards\info_nomoney_topay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\info cards\info_sell_house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\info cards\info_takechance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\info cards\info_buy_house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\chance\chance15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\blueback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\purple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\smile_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\smile_pink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\smile_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\smile_lightBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\smile_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\smile_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\money big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\money_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\_house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\_hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\info cards\info_nomoney_tobuy_houses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\info cards\info_sell_houses_first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\info cards\info_winner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\cards\card34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="audio\sound_chance_ganhou.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="audio\sound_chance_perdeu.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="audio\sound_prisao.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="audio\sound_others_players_turn.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="audio\sound_player_turn.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="audio\sound_winner.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\back.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\regras_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\regras.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

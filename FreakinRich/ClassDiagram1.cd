@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FreakinRich.ButtonPictureBox" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAIAAQCIAAAAABAAAAAAAAAAAAAIAAACAACAAA=</HashCode>
+      <FileName>ButtonPictureBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FreakinRich.Chance">
+    <Position X="5.75" Y="6.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="FreakinRich.Chance.ChanceType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Chance.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAAAABAQAAAAAAAAAQAAAQAAQAgAABAAAA=</HashCode>
+      <FileName>Chance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FreakinRich.FormInterface" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="FreakinRich.FormInterface.voidIntIntCallback" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FormInterface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="FreakinRich.FormInterface.AddControlCallback" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FormInterface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="FreakinRich.FormInterface.voidCtrStringCallback" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FormInterface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="FreakinRich.FormInterface.SetControlEnabledCallback" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FormInterface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="FreakinRich.FormInterface.SetControlVisibleCallback" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FormInterface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="FreakinRich.FormInterface.voidCtrIntCallback" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FormInterface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="FreakinRich.FormInterface.voidNoParamsCallback" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FormInterface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="FreakinRich.FormInterface.SetTextCallback" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FormInterface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="FreakinRich.FormInterface.SetImageControlCallback" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FormInterface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>4hQ2GJKwS6K2YZ/AhRu2JtZLKAz8wbcBkVBArf8GxFY=</HashCode>
+      <FileName>FormInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FreakinRich.GameLogic">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAEBABYIAUABAkAAAAAIBEIAACABAgACgEBIAAAAA=</HashCode>
+      <FileName>GameLogic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FreakinRich.Player">
+    <Position X="5.75" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAAQQAAACAQcEAEAAAIAIAQAEAAAAgAAAiAEQAEAEAQ=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FreakinRich.PlayerMarker" Collapsed="true">
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABIAAIAAAAAhAAAAAAAIAASAQAABAAABAAAA=</HashCode>
+      <FileName>PlayerMarker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FreakinRich.Property">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="FreakinRich.Property.PropertyType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Property.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IIAAIECQAgUAQAAkAAQCEAAAAAQAAAAAAQAgAADgQAA=</HashCode>
+      <FileName>Property.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FreakinRich.PropertyGroup">
+    <Position X="7.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAgAIAAAAAAAAAQA=</HashCode>
+      <FileName>PropertyGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FreakinRich.Server">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCCAAEIDIOWEAABEAAIAAKAECAAkoAAAggAAAAQBQGA=</HashCode>
+      <FileName>Server.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FreakinRich.StreamConformer">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="FreakinRich.StreamConformer.MessageType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>StreamConformer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>StreamConformer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
